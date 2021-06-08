@@ -1,10 +1,13 @@
-import { LoginContainer, Input, Button, ButtonGoogle } from '../styles/components/registration'
+import { Container, Input, Button, ButtonGoogle } from '../styles/components/singup'
 
-export default function Registration() {
+export function SingUp() {
     return (
-        <LoginContainer>
+        <Container>
             <h1>Registre-se</h1>
-            <span>ou <a>acesse sua conta</a></span>
+            <span>
+                ou 
+                <a href="#"> acesse sua conta</a>
+            </span>
 
             <Input type="text" placeholder="Nome" />
             <Input type="email" placeholder="E-mail" />
@@ -23,6 +26,6 @@ export default function Registration() {
                 <img src="icons/google.svg" alt="Google" />
                 <span>Registrar-se pelo Google</span>
             </ButtonGoogle>
-        </LoginContainer>
+        </Container>
     )
 }

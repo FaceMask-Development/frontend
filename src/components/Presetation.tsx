@@ -1,6 +1,6 @@
 import { GroupAbout, PresentationContainer, GroupCards, Card } from '../styles/components/presentantion'
 
-export default function Presentation() {
+export function Presentation() {
     return (
         <PresentationContainer>
             <header>
