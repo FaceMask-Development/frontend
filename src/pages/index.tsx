@@ -1,16 +1,15 @@
-import { useContext } from 'react'
-import Head from 'next/head'
+import React, { useContext } from 'react';
+import Head from 'next/head';
 
-import { Presentation } from '../components/Presetation'
-import { SingUp } from '../components/SingUp'
-import { SingIn } from '../components/SingIn'
-import { LinkContext, LinkProvider } from '../context/LinkContext'
+import { Presentation } from '@views/Presentation/Presentation';
+import { SignUp } from '@views/SignUp/SignUp';
+import { SignIn } from '@views/SignIn';
+import { LinkContext, LinkProvider } from '@context/LinkContext';
 
-import { Container } from '../styles/pages/utils'
+import { Container } from '@styles/utils';
 
-export default function Home() {
-  const { hasClickedLink } = useContext(LinkContext)
-  console.log(hasClickedLink)
+export default function Home(): JSX.Element {
+  const { hasClickedLink } = useContext(LinkContext);
 
   return (
     <Container>
@@ -19,14 +18,8 @@ export default function Home() {
       </Head>
       <section>
         <Presentation />
-        <LinkProvider>
-          {hasClickedLink ? (
-            <SingUp />
-          ) : (
-            <SingIn />
-          )}
-        </LinkProvider>
+        <LinkProvider>{hasClickedLink ? <SignUp /> : <SignIn />}</LinkProvider>
       </section>
     </Container>
-  )
+  );
 }

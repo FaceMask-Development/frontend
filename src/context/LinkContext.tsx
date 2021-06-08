@@ -1,30 +1,28 @@
-import { createContext, ReactNode, useState } from "react"
+import { createContext, ReactNode, useState } from 'react';
 
 interface LinkContextData {
-    hasClickedLink: boolean;
-    handleClickLink: () => void;
+  hasClickedLink: boolean;
+  handleClickLink: () => void;
 }
 
 interface LinkContextProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
-export const LinkContext = createContext({} as LinkContextData)
+export const LinkContext = createContext({} as LinkContextData);
 
-export function LinkProvider({ children }: LinkContextProps) {
-    const [hasClickedLink, setHasClickedLink] = useState(false);
+export function LinkProvider({ children }: LinkContextProps): JSX.Element {
+  const [hasClickedLink, setHasClickedLink] = useState(false);
+  const handleClickLink = (): void => setHasClickedLink(!hasClickedLink);
 
-    function handleClickLink() {
-        setHasClickedLink(true);
-        console.log(hasClickedLink)
-    }
-
-    return (
-        <LinkContext.Provider value={{
-            hasClickedLink,
-            handleClickLink,
-        }}>
-            {children}
-        </LinkContext.Provider>
-    )
+  return (
+    <LinkContext.Provider
+      value={{
+        hasClickedLink,
+        handleClickLink,
+      }}
+    >
+      {children}
+    </LinkContext.Provider>
+  );
 }
