@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import Head from 'next/head';
 
-import { Presentation } from '@views/Presentation/Presentation';
-import { SignUp } from '@views/SignUp/SignUp';
+import { Presentation } from '@views/Presentation';
+import { SignUp } from '@views/SignUp';
 import { SignIn } from '@views/SignIn';
-import { LinkContext, LinkProvider } from '@context/LinkContext';
+import { LinkContext, LinkProvider } from '@context/linkContext';
 
 import { Container } from '@styles/utils';
 

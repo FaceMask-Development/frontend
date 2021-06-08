@@ -4,6 +4,8 @@ export const PresentationContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  padding: 0 4.5rem;
+
   main {
     height: 100%;
 
@@ -11,6 +13,8 @@ export const PresentationContainer = styled.div`
     flex-direction: column;
   }
 `;
+
+export const PresentationWrapper = styled.main``;
 
 export const GroupAbout = styled.div`
   margin-top: 2.5rem;

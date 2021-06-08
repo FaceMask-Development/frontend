@@ -5,13 +5,16 @@ import {
   Card,
 } from './presentantion.styles';
 
+import { Header } from '@components/Header';
+import { Footer } from '@components/Footer';
+
+import * as S from './presentantion.styles';
+
 export function Presentation(): JSX.Element {
   return (
     <PresentationContainer>
-      <header>
-        <h1>FACEMASK</h1>
-      </header>
-      <main>
+      <Header />
+      <S.PresentationWrapper>
         <GroupAbout>
           <h2>AI-Powered Autonomous Checkout</h2>
           <p>
@@ -68,8 +71,8 @@ export function Presentation(): JSX.Element {
             </p>
           </Card>
         </GroupCards>
-      </main>
-      <footer>Copyright © 2021 Facemask</footer>
+      </S.PresentationWrapper>
+      <Footer />
     </PresentationContainer>
   );
 }

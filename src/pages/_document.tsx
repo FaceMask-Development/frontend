@@ -7,7 +7,6 @@ import Document, {
   NextScript,
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-
 export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext,
@@ -37,7 +36,7 @@ export default class MyDocument extends Document {
     }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <Html>
         <Head>
@@ -47,10 +46,8 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
+        <Main />
+        <NextScript />
       </Html>
     );
   }
