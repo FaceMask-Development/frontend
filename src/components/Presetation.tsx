@@ -1,4 +1,4 @@
-import { GroupAbout, PresentationContainer, GroupCards, Card, GroupOurDifference } from '../styles/components/presentantion'
+import { GroupAbout, PresentationContainer, GroupCards, Card } from '../styles/components/presentantion'
 
 export default function Presentation() {
     return (
@@ -14,18 +14,9 @@ export default function Presentation() {
                         retailers with our modern AI-powered computer vision platform. Just grab and go!
                     </p>
                 </GroupAbout>
-                <GroupOurDifference>
-                    <h2>What Makes Us Different</h2>
-                    <span>We’re putting the customer and retail relationship first</span>
-                    <p>
-                        Standard’s technology is a giant leap forward for retailers who want 
-                        autonomous checkout, but don’t want to build new stores to get it.
-                        Our five driving principles are:
-                    </p>
-                </GroupOurDifference>
                 <GroupCards>
                     <Card>
-                        <img src="icons/shield.svg" alt="" />
+                        <img src="icons/shield.svg" alt="Privacidade" />
                         <h4>01. Privacy</h4>
                         <p>
                             Standard doesn't use any facial recognition or other biometrics.
@@ -34,7 +25,7 @@ export default function Presentation() {
                         </p>
                     </Card>
                     <Card>
-                        <img src="icons/scability.svg" alt="" />
+                        <img src="icons/scability.svg" alt="Escabilidade" />
                         <h4>02. Scalability</h4>
                         <p>
                             Standard’s solution is camera-first - no turnstiles or gates. 
@@ -42,7 +33,7 @@ export default function Presentation() {
                         </p>
                     </Card>
                     <Card>
-                        <img src="icons/happy.svg" alt="" />
+                        <img src="icons/happy.svg" alt="Experiencia" />
                         <h4>03. Experience</h4>
                         <p>
                             Standard believes good retail is predicated on happy customers having a great experience. 
@@ -50,7 +41,7 @@ export default function Presentation() {
                         </p>
                     </Card>
                     <Card>
-                        <img src="icons/flexibility.svg" alt="" />
+                        <img src="icons/flexibility.svg" alt="Flexiblidade" />
                         <h4>04. Flexibility</h4>
                         <p>
                             Standard supports retailers’ existing environments, and can integrate with existing technology. 
@@ -59,7 +50,7 @@ export default function Presentation() {
                         </p>
                     </Card>
                     <Card>
-                        <img src="icons/graph.svg" alt="" />
+                        <img src="icons/graph.svg" alt="Grafico" />
                         <h4>05. Insights</h4>
                         <p>
                             Analytics is in Standard’s DNA. We work with retailers to understand product 
@@ -68,7 +59,7 @@ export default function Presentation() {
                     </Card>
                 </GroupCards>
             </main>
-            <footer>© 2021 Facemask</footer>
+            <footer>Copyright © 2021 Facemask</footer>
         </PresentationContainer>
     )
 }

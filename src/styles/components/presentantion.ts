@@ -14,6 +14,7 @@ export const PresentationContainer = styled.div`
 
 export const GroupAbout = styled.div`
     margin-top: 2.5rem;
+    height: 40%;
 
     display: flex;
     flex-direction: column;
@@ -25,28 +26,6 @@ export const GroupAbout = styled.div`
 
     p {
         width: 30%;
-    }
-`
-
-export const GroupOurDifference = styled.div`
-    margin: 2.5rem 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h2 {
-        font-size: 1.2rem;
-        color: #2854e7;
-    }
-
-    span {
-        margin: 0.9rem 0;
-        font-size: 1.6rem;
-    }
-
-    p {
-        width: 60%;
     }
 `
 
