@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
 export const Footer = styled.footer`
-  padding: 2rem 0;
+    grid-area: footer;
+
+    display: flex;
+    align-items: flex-start;
 `;

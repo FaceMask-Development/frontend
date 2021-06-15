@@ -3,5 +3,11 @@ import React from 'react';
 import * as S from './footer.styles';
 
 export const Footer = (): JSX.Element => {
-  return <S.Footer>Copyright © 2021 Facemask</S.Footer>;
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <S.Footer>
+      <span>Copyright © { currentYear } Facemask</span>
+    </S.Footer>
+  );
 };

@@ -1,14 +1,16 @@
 import React, { useContext } from 'react';
-import { PageWrapper } from '@styles/utils';
 import { LinkContext } from '@context/linkContext';
 import { Input } from '@components/Input';
+import { Checkbox } from '@components/Checkbox';
 import { Button } from '@components/Button';
+
+import * as S from '@styles/utils';
 
 export function SignIn(): JSX.Element {
   const { handleClickLink } = useContext(LinkContext);
 
   return (
-    <PageWrapper>
+    <S.InputWrapper>
       <h1>Acesse</h1>
       <span>
         sua conta do Facemask ou
@@ -22,7 +24,7 @@ export function SignIn(): JSX.Element {
       <Input type="password" value="" placeholder="Senha" />
 
       <div>
-        <input type="checkbox" name="" id="" />
+        <Checkbox name="remeber_mydatas" id="remeber_mydatas" />
         <span>Lembrar meus dados</span>
       </div>
 
@@ -35,6 +37,6 @@ export function SignIn(): JSX.Element {
           alt: 'Google',
         }}
       />
-    </PageWrapper>
+    </S.InputWrapper>
   );
 }

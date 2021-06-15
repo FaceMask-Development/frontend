@@ -1,11 +1,12 @@
 import React from 'react';
-import { PageWrapper } from '@styles/utils';
+import { InputWrapper } from '@styles/utils';
 import { Input } from '@components/Input';
+import { Checkbox } from '@components/Checkbox';
 import { Button } from '@components/Button';
 
 export function SignUp(): JSX.Element {
   return (
-    <PageWrapper>
+    <InputWrapper>
       <h1>Registre-se</h1>
       <span>
         ou
@@ -18,7 +19,7 @@ export function SignUp(): JSX.Element {
       <Input type="text" value="" placeholder="CNPJ" />
 
       <div>
-        <input type="checkbox" name="" id="" />
+        <Checkbox name="agree_term" id="agree_term" />
         <span>
           Concordo com os <a>Termos do Facemask</a>
         </span>
@@ -33,6 +34,6 @@ export function SignUp(): JSX.Element {
           path: 'icons/google.svg',
         }}
       />
-    </PageWrapper>
+    </InputWrapper>
   );
 }

@@ -1,24 +1,17 @@
 import styled from 'styled-components';
 
-export const PresentationContainer = styled.div`
+export const PresentationWrapper = styled.main`
+  grid-area: presentation;
+  
+  height: 100%;
+
   display: flex;
   flex-direction: column;
-
-  padding: 0 4.5rem;
-
-  main {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-  }
 `;
 
-export const PresentationWrapper = styled.main``;
-
 export const GroupAbout = styled.div`
-  margin-top: 2.5rem;
-  height: 40%;
+  margin-top: 2rem;
+  height: 50%;
 
   display: flex;
   flex-direction: column;
