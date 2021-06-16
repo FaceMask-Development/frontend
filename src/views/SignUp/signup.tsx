@@ -1,16 +1,24 @@
-import React from 'react';
-import { InputWrapper } from '@styles/utils';
+import React, { useContext } from 'react';
+import { LinkContext } from '@context/linkContext';
+
 import { Input } from '@components/Input';
 import { Checkbox } from '@components/Checkbox';
 import { Button } from '@components/Button';
 
+import * as S from '@styles/utils';
+
 export function SignUp(): JSX.Element {
+  const { handleClickLink } = useContext(LinkContext);
+
   return (
-    <InputWrapper>
+    <S.InputWrapper>
       <h1>Registre-se</h1>
       <span>
         ou
-        <a href="#"> acesse sua conta</a>
+        <label onClick={handleClickLink}> 
+          {' '}
+          acesse sua conta 
+        </label>
       </span>
 
       <Input type="text" value="" placeholder="Nome" />
@@ -34,6 +42,6 @@ export function SignUp(): JSX.Element {
           path: 'icons/google.svg',
         }}
       />
-    </InputWrapper>
+    </S.InputWrapper>
   );
 }

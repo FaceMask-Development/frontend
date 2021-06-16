@@ -33,7 +33,8 @@ export const InputWrapper = styled.div`
     margin-bottom: 1.3rem;
   }
 
-  a {
+  & > span label {
+    cursor: pointer;
     color: var(--link);
   }
 

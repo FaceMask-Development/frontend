@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { LinkContext } from '@context/linkContext';
+
 import { Input } from '@components/Input';
 import { Checkbox } from '@components/Checkbox';
 import { Button } from '@components/Button';
@@ -14,10 +15,10 @@ export function SignIn(): JSX.Element {
       <h1>Acesse</h1>
       <span>
         sua conta do Facemask ou
-        <a href="#" onClick={handleClickLink}>
+        <label onClick={handleClickLink}>
           {' '}
           crie uma nova conta
-        </a>
+        </label>
       </span>
 
       <Input type="email" value="" placeholder="E-mail" />
