@@ -11,13 +11,16 @@ const CardInfo = ({
 }: CardInfoProps): JSX.Element => {
   return (
     <S.Container>
-      <S.IconContainer bgColor={color}>{icon}</S.IconContainer>
+      <S.IconContainer bgColor={color}>
+        <S.IconWrapper>{icon}</S.IconWrapper>
+      </S.IconContainer>
       <S.ContentWrapper>
-        <span>{value}</span>
-        <span>{label}</span>
+        <S.Value>{value}</S.Value>
+        <S.Label>{label}</S.Label>
       </S.ContentWrapper>
     </S.Container>
   );
 };
 
 export default CardInfo;
+export { CardInfo };

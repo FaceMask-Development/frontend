@@ -1,1 +1,1 @@
-export * as default from './cardinfo';
+export * from './cardinfo';

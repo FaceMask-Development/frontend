@@ -1,6 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  html {
+    height: 100%;
+  }
+
+  body,
+  body > div:first-child,
+  div#__next,
+  div#__next > div {
+    height: 100%;
+    min-height: 100%;
+  }
+
   * {
     margin: 0;
     padding: 0;
