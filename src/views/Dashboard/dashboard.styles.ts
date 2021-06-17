@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 100%;
-  min-height: 100%;
+  min-height: calc(100% - 65px);
   padding: 65px 101px;
 
   @media only screen and (max-width: 1050px) {

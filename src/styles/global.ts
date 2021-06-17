@@ -2,20 +2,31 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   html {
+    box-sizing: border-box;
     height: 100%;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    line-height: 1.15;
+    text-size-adjust: 100%;
   }
 
-  body,
-  body > div:first-child,
-  div#__next,
-  div#__next > div {
-    height: 100%;
+  body {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
     min-height: 100%;
   }
 
+  #__next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
 
