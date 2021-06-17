@@ -1,1 +1,2 @@
-export * from './cardinfo';
+export { CardInfo } from './cardinfo';
+export * as Icons from './icons';

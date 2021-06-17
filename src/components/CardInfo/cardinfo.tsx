@@ -8,16 +8,21 @@ const CardInfo = ({
   label,
   color,
   icon,
+  enablePercent,
+  percentValue,
 }: CardInfoProps): JSX.Element => {
   return (
     <S.Container>
-      <S.IconContainer bgColor={color}>
-        <S.IconWrapper>{icon}</S.IconWrapper>
+      <S.IconContainer>
+        <S.IconWrapper bgColor={color}>{icon}</S.IconWrapper>
       </S.IconContainer>
-      <S.ContentWrapper>
-        <S.Value>{value}</S.Value>
+      <S.ContentContainer>
+        <S.ValueContainer>
+          <S.Value>{value}</S.Value>
+          {enablePercent && <S.ValuePercent>({percentValue}%)</S.ValuePercent>}
+        </S.ValueContainer>
         <S.Label>{label}</S.Label>
-      </S.ContentWrapper>
+      </S.ContentContainer>
     </S.Container>
   );
 };
