@@ -113,6 +113,16 @@ const Dashboard = (): JSX.Element => {
                   spacing: 10,
                 },
               ]}
+              axisBottom={{
+                tickSize: 0,
+                tickPadding: 10,
+                tickRotation: 0,
+              }}
+              axisLeft={{
+                tickSize: 0,
+                tickPadding: 5,
+                tickRotation: 0,
+              }}
             />
           </S.ChartBody>
         </S.ChartWrapper>
